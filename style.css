@@ -1,0 +1,259 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Cabezera o portada de la pagina web*/
+
+#header {
+    width: 100%;
+    text-align: center;
+    background-image: url("img/banner-2.jpg");
+    background-size: cover;
+    padding: 30vh 100px;
+    height: 100vh;
+    font-size: 50px;
+}
+
+
+/*Primera sección de la pagina web*/
+
+#section-1 {
+    width: 100%;
+}
+
+.column1 {
+    width: 50%;
+    background-color: white;
+    float: left;
+    padding: 10px
+}
+
+.column1 h2 {
+    font-size: 65px;
+    text-align: left;
+}
+
+.column1 p {
+    font-size: 40px;
+    text-align: left;
+}
+
+.column1 img {
+    width: 100%;
+    padding-right: 25px
+}
+
+
+/* Segunda sección con las cuatro iamgenes*/
+
+#section-2 {
+    background-color: #25eda5;
+    width: 100%;
+    float: left;
+}
+
+.column2 {
+    color: black;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.column2 h1 {
+    text-align: center;
+    font-size: 65px;
+}
+
+.img-column2 {
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding-bottom: 3%;
+}
+
+.img-column2 img {
+    width: 75%;
+}
+
+
+/*Seción 3 de la pagina web*/
+
+.column3 {
+    width: 50%;
+    background-color: white;
+    float: left;
+    padding: 2vh
+}
+
+.column3 img {
+    width: 100%;
+    float: left;
+}
+
+.column3 h2 {
+    font-size: 60px;
+}
+
+.column3 p {
+    font-size: 40px;
+}
+
+
+/*Sección 4 de la pagina web */
+
+#section-4 {
+    width: 100%;
+    float: left;
+    background-color: #25eda5;
+}
+
+.column4 {
+    width: 25%;
+    float: left;
+}
+
+.column4 img {
+    width: 100%;
+    float: left;
+}
+
+
+/*Sección 5 de la pagina web */
+
+#section-5 {
+    width: 100%;
+    float: left;
+    background-color: #45a5fb;
+}
+
+.column5 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/*Sección 6 de la pagina web */
+
+#section-6 {
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.column6 {
+    width: 50%;
+    float: left;
+    font-size: 85%;
+    justify-content: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.column6-1 {
+    width: 25%;
+    float: left;
+    font-size: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/* Clases Auxiliares */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relleno-lateral {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+
+/*Para dispositivos móviles */
+
+@media screen and (max-width: 700px) {
+    #header {
+        font-size: 190%;
+        padding: 30% 10%;
+        height: 50%;
+    }
+    /*Sección 1 */
+    .column1 {
+        width: 100%;
+        float: right;
+        padding: 0%;
+    }
+    .column1 h2 {
+        font-size: 35px;
+    }
+    .column1 p {
+        font-size: 25px;
+    }
+    .column1 img {
+        width: 100%;
+        padding: 0%;
+    }
+    /*sección 2 */
+    .column2 h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .img-column2 {
+        width: 50%;
+    }
+    .img-column2 img {
+        width: 85%;
+    }
+    /*Sección 3  */
+    .column3 {
+        width: 100%;
+        padding: 0%;
+    }
+    .column3 h2 {
+        font-size: 30px;
+    }
+    .column3 p {
+        font-size: 20px;
+    }
+    /*Sección 4 */
+    .column4 {
+        width: 50%;
+    }
+    /*Sección 5 */
+    .column5 {
+        font-size: 105%;
+        text-align: center;
+    }
+    /*Sección 6 */
+    .column6 {
+        width: 100%;
+        font-size: 100%;
+    }
+    .column6-1 {
+        width: 50%;
+    }
+    /*Reglas Auxiliares */
+    .flex {
+        display: block;
+    }
+}
